@@ -79,7 +79,7 @@ img {
     color: rgb(197, 95, 146);
 }
 
-#welcome {
+#welcome-section {
     margin: 8rem;
     display: flex;
     flex-direction: row;
@@ -217,8 +217,15 @@ background: rgb(197, 95, 146);
     background: #303841;
 }
 
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+} 
+
 #contact i {
     color: white;
+    z-index: 2;
 }
 .contact-section-header h2 {
     font-size: 3rem;
@@ -262,6 +269,7 @@ footer {
     display: block;
     text-align: center;
     border-top: 2px solid  rgb(197, 95, 146);
+
 }
 
 footer p {
