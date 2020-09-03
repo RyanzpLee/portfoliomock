@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 10rem;
     font-weight: 700;
     margin: 5rem 0 2rem 0;
 }
@@ -39,4 +39,232 @@ li {
 a {
     text-decoration: none;
     color: rgb(14, 48, 80);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
+    z-index: 2;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#navbar li {
+    padding: 0px 0.6rem;
+}
+
+#navbar .decoration {
+    color: #fff;
+    transition: color 0.3s ease-out;
+}
+
+#navbar a:hover .decoration {
+    color: rgb(197, 95, 146);
+}
+
+#welcome {
+    margin: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 1000px) {
+    #welcome-section {
+        text-align: center;
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#avatar {
+    margin-top: 8rem;
+    margin-left: 30%;
+    width: 50%;
+    height: auto;
+}
+
+#subheading {
+font-size: 5rem;
+font-weight: 500;
+margin: 2rem 0;
+}
+
+#subheading span {
+color: rgb(197, 95, 146);
+}
+
+@media (max-width: 700px){
+#subheading {
+    font-size: 4rem;
+}
+}
+
+#about {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+}
+
+#about p {
+    font-size: 1.5rem;
+    max-width: 70%;
+    text-align: center;
+    text-justify: inter-word;
+    margin-top: 1rem;
+}
+
+#projects {
+    background: #45567d;
+    text-align: center;
+    padding: 10rem 2rem;
+    justify-items: center;
+}
+
+#projects a {
+    color: white;
+}
+
+#projects a .decoration {
+    color: #303841;
+}
+#projects a:hover .decoration {
+    color: rgb(197, 95, 146);
+}
+
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 700px) {
+.projects-section-header {
+    font-size: 4rem;
+}
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-tile {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    background: #303841;
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+
+
+.btn-show-all {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-size: 2rem;
+    background: #303841;
+    transition: background 0.3s ease-out
+}
+
+.btn-show-all:hover {
+background: rgb(197, 95, 146);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #303841;
+}
+
+#contact i {
+    color: white;
+}
+.contact-section-header h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .contact-section-header  h2 {
+        font-size: 3rem;
+    }
+}
+
+.contact-section-header > p {
+    font-style: italic;
+    color: white;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.contact-details {
+    color: white;
+    margin: 15px;
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+footer {
+    display: block;
+    text-align: center;
+    border-top: 2px solid  rgb(197, 95, 146);
+}
+
+footer p {
+    margin: 1rem;
+    color: #45567d;
 }
